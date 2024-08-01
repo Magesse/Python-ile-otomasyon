@@ -41,20 +41,6 @@ CREATE TABLE `car_park` (
 -- Tablo döküm verisi `car_park`
 --
 
-INSERT INTO `car_park` (`car_id`, `driver_name_surname`, `car_plate`, `car_brand`, `car_model`, `driver_sex`, `driver_age`) VALUES
-(37, 'TALHA KILIÇ', '34 DOU 97', 'VOLVO', 'S90', 'ERKEK', 26),
-(40, 'TAYFUN SOY ', '34 TYF 34', 'PORCHE', 'SPIDER', 'ERKEK', 32),
-(42, 'KADİR SANCAR', '34 KDR 23', 'VOLKSWAGEN', 'GOLF', 'ERKEK', 20),
-(44, 'EMRE GÜNEY ', '34 FEV 433', 'HYUNDAİ', 'BYON', 'ERKEK', 23),
-(45, 'ZEHRA KILIÇ', '34 ZHR 58', 'MERCEDES', 'VITO', 'KADIN', 53),
-(47, 'YAKUP BATO', '34 BT 5757', 'MASERATI', 'LEVANTE', 'ERKEK', 25),
-(49, 'TALHA KILIÇ', '34 FB 1907', 'MERCEDES', 'S360', 'ERKEK', 26),
-(50, 'AHMET ERCANLAR', '34 AHM 1907', 'MERCEDES ', 'TOROS', 'ERKEK', 45),
-(54, 'KADİR AYDEMİR', '34 FSM 414', 'PEUGEOT', '3008', 'ERKEK', 34),
-(55, 'YAĞIZ SABUN', '34 DOU 34', 'BENTLEY', 'CONTİNENTAL GT', 'ERKEK', 34),
-(56, 'YAKUP BATO', '56 BAT 907', 'MASERATI', 'LEVANTE', 'ERKEK', 25),
-(57, 'GİRAY ESEN', '34 LAZ 53', 'TOROS', 'TOROS', 'ERKEK', 90),
-(58, 'ZEHRA KILIÇ', '34 SVS 58', 'PEUGEOT', '3008', 'KADIN', 53);
 
 -- --------------------------------------------------------
 
@@ -72,16 +58,7 @@ CREATE TABLE `user` (
 -- Tablo döküm verisi `user`
 --
 
-INSERT INTO `user` (`id`, `username`, `password`) VALUES
-(1, 'Talha ', '1234'),
-(3, 'TLH', '123'),
-(5, 'UFB', '123'),
-(6, 'DOUFB', '123'),
-(9, 'T', '1'),
-(10, 'A', '1'),
-(11, '', ''),
-(12, 'EMRE', '12345'),
-(13, 'EMR', '1');
+
 
 --
 -- Dökümü yapılmış tablolar için indeksler
@@ -97,6 +74,7 @@ ALTER TABLE `car_park`
 -- Tablo için indeksler `user`
 --
 ALTER TABLE `user`
+    
   ADD PRIMARY KEY (`id`);
 
 --
